@@ -16,7 +16,15 @@ hardware. We demonstrate the utility of our contact detection network in two dow
 and gait analysis. For animation, we incorporate predicted contact labels into a reinforcement learning framework with a two-
 segment foot model, enabling realistic foot articulation behavior. For analysis, we estimate clinically relevant gait parameters
 such as double and single support times, and validate the accuracy against pressure sensor mat data and prior video-based
-methods. Our results show competitive performance in both animation and analysis settings. The code is publicly available at
-github.com/DaeeYong/ContactVision.
+methods. Our results show competitive performance in both animation and analysis settings. The code is publicly available at github.com/DaeeYong/ContactVision.
 
 ---
+## Requirements
+비디오의 입력으로 OpenPose의 결과물이 필요하다. OpenPose는 해당 깃허브 페이지를 참조.[https://github.com/CMU-Perceptual-Computing-Lab/openpose]
+
+
+## Installation
+## Steps for running with a custom video
+## Run examples
+모델의 출력은 ['left_toe', 'right_toe', 'left_heel', 'right_heel'] 이다.
+## Bibtex

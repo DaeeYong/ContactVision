@@ -35,7 +35,7 @@ def play_video(video_path, npy_path, output_path, save_flag=False):
         for x, y, c in person:
             if np.isnan(x) or c < 0.1:
                 continue
-            cv2.circle(frame, (int(x), int(y)), 3, (0,255,0), 3)
+            cv2.circle(frame, (int(x), int(y)), 5, (0,0,255), 3)
 
         if save_flag and out is not None:
             out.write(frame)
@@ -69,8 +69,6 @@ def main():
     flag = args.flag
     
     play_video(input_video, input_npy, output_path, save_flag=flag)
-    if flag == 1:
-        print(Fore.GREEN + f'Video Save Done: {output_path}')
 
 if __name__ == "__main__":
     main()
